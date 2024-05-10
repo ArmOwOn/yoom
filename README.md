@@ -13,9 +13,9 @@ NextJS, Stream, Clerk, TailwindCSS, shadcn-UI
 
 ## Run Locally
 
-#### 1. Clone this repository to your local machine.
+### 1. Clone this repository to your local machine.
 
-#### 2. Add the environment variables.
+### 2. Add the environment variables.
 
 You need to add these environment variables to your `.env.local` file:
 
@@ -34,9 +34,9 @@ Then you'll need to get the following variables from [Stream](https://getstream.
 And finally set your base URL:
 `NEXT_PUBLIC_BASE_URL` to `localhost:3000`
 
-#### 3. Run `npm install` to install the required dependencies.
+### 3. Run `npm install` to install the required dependencies.
 
-#### 4. Run `npm run dev` to start the web server.
+### 4. Run `npm run dev` to start the web server.
 
 ## Lessons Learned
 
