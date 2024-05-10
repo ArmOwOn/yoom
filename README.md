@@ -17,21 +17,25 @@ NextJS, Stream, Clerk, TailwindCSS, shadcn-UI
 
 ### 2. Add the environment variables.
 
-You need to add these environment variables to your `.env.local` file:
+#### You need to add these environment variables to your `.env.local` file:
 
-Coming from [Clerk](https://clerk.com) you need:
+#### Coming from [Clerk](https://clerk.com) you need:
+
 `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY`
 `CLERK_SECRET_KEY`
 
-This is optional but if you want a clean sign-in & sign-up URL you can add:
+#### This is optional but if you want a clean sign-in & sign-up URL you can add:
+
 `NEXT_PUBLIC_CLERK_SIGN_IN_URL` to `/sign-in`
 `NEXT_PUBLIC_CLERK_SIGN_UP_URL` to `/sign-up`
 
-Then you'll need to get the following variables from [Stream](https://getstream.io):
+#### Then you'll need to get the following variables from [Stream](https://getstream.io):
+
 `NEXT_PUBLIC_STREAM_API_KEY`
 `STREAM_SECRET_KEY`
 
-And finally set your base URL:
+#### And finally set your base URL:
+
 `NEXT_PUBLIC_BASE_URL` to `localhost:3000`
 
 ### 3. Run `npm install` to install the required dependencies.
