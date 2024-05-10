@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# minimalist ZOOM clone website using NextJS & Stream & Clerk
 
-## Getting Started
+[Live Site](https://yoom-henna.vercel.app)
 
-First, run the development server:
+![App Screenshot](./screenshots/screenshot-1.png)
+![App Screenshot](./screenshots/screenshot-2.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+YOOM is a ZOOM clone built using NextJS, Stream for the video calls/streaming and clerk for account authentication. it has fully functional Video & Voice call, session recording & playback, schedule a meeting and so much more!
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+NextJS, Stream, Clerk, TailwindCSS, shadcn-UI
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Run Locally
 
-## Learn More
+#### 1. Clone this repository to your local machine.
 
-To learn more about Next.js, take a look at the following resources:
+#### 2. Add the environment variables.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+You need to add these environment variables to your `.env.local` file:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Coming from [Clerk](https://clerk.com) you need:
+`NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY`
+`CLERK_SECRET_KEY`
 
-## Deploy on Vercel
+This is optional but if you want a clean sign-in & sign-up URL you can add:
+`NEXT_PUBLIC_CLERK_SIGN_IN_URL` to `/sign-in`
+`NEXT_PUBLIC_CLERK_SIGN_UP_URL` to `/sign-up`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Then you'll need to get the following variables from [Stream](https://getstream.io):
+`NEXT_PUBLIC_STREAM_API_KEY`
+`STREAM_SECRET_KEY`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+And finally set your base URL:
+`NEXT_PUBLIC_BASE_URL` to `localhost:3000`
+
+#### 3. Run `npm install` to install the required dependencies.
+
+#### 4. Run `npm run dev` to start the web server.
+
+## Lessons Learned
+
+This was my first substantial project utilizing the NextJS framework, and initially, I harbored uncertainties about my capability to undertake such an endeavor. However, I am gratified that I embarked on this journey, as it presented me with challenges that facilitated a deeper comprehension of NextJS and its underlying mechanisms.
+
+Through this experience, I became intimately acquainted with NextJS routing and file structure conventions. Consequently, I believe I have emerged as a more proficient developer due to these invaluable learnings. Furthermore, working with Stream and Clerk has streamlined the implementation of authentication and streaming services within my application, rendering the process remarkably effortless.
+
+Overall, this project proved to be an exceptional experience, fostering significant growth in my skills and knowledge. I am grateful for the opportunity to tackle the complexities inherent in such an undertaking, as it has undoubtedly contributed to my professional development.
