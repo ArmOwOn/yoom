@@ -2,8 +2,8 @@
 
 [Live Site](https://yoom-henna.vercel.app)
 
-![App Screenshot](./screenshots/screenshot-1.png)
-![App Screenshot](./screenshots/screenshot-2.png)
+![App Screenshot](./screenshots/Screenshot-1.png)
+![App Screenshot](./screenshots/Screenshot-2.png)
 
 YOOM is a ZOOM clone built using NextJS, Stream for the video calls/streaming and clerk for account authentication. it has fully functional Video & Voice call, session recording & playback, schedule a meeting and so much more!
 
